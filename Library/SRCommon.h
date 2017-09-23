@@ -78,7 +78,7 @@ FOUNDATION_STATIC_INLINE UInt32 SRCocoaToCarbonFlags(NSEventModifierFlags aCocoa
 
     @discussion Throws NSInternalInconsistencyException if bundle cannot be found.
 */
-NSBundle *SRBundle();
+NSBundle *SRBundle(void);
 
 
 /*!
@@ -108,7 +108,7 @@ NSString *SRReadableASCIIStringForCocoaModifierFlagsAndKeyCode(NSEventModifierFl
     Determines if given key code with flags is equal to key equivalent and flags
     (usually taken from NSButton or NSMenu).
 
-    @discussion On Mac OS X some key combinations can have "alternates". E.g. option-A can be represented both as option-A and as Œ.
+    @discussion On Mac OS X some key combinations can have "alternates". E.g. option-A can be represented both as option-A and as Å’.
 */
 BOOL SRKeyCodeWithFlagsEqualToKeyEquivalentWithFlags(unsigned short aKeyCode,
                                                      NSEventModifierFlags aKeyCodeFlags,
